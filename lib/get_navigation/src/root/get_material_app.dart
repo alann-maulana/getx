@@ -284,8 +284,8 @@ class GetMaterialApp extends StatelessWidget {
                 home: home,
                 routes: routes ?? const <String, WidgetBuilder>{},
                 initialRoute: initialRoute,
-                onGenerateRoute:
-                    (getPages != null ? generator : onGenerateRoute),
+                onGenerateRoute: onGenerateRoute,
+                    // (getPages != null ? generator : onGenerateRoute),
                 onGenerateInitialRoutes: (getPages == null || home != null)
                     ? onGenerateInitialRoutes
                     : initialRoutesGenerate,
